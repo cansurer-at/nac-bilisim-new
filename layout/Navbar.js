@@ -3,35 +3,67 @@ import React from 'react'
 
 function Navbar() {
   return (
-    <div className="hidden bg-NACBlack lg:block">
+    <>
+
+        {/* //---------------Large devices--------------------------------------------------------------------//// */}
+    
+    <div className="hidden bg-NACBlack md:block">
         <div class="flex container mx-auto space-x-16 items-center">
           <Link href="/">
           <img src="/Logo.svg"></img>
           </Link>
-          <button className="h-10 font-bold text-white text-red-700 hover:text-red-700 hover:border-b-2 ">
+          <button className="h-8 text-white text-red-700 font-md text-md hover:text-NACRed hover:border-b-2 hover:border-NACRed ">
             <Link href="/">
             <a href="/">Anasayfa</a>
             </Link>
           </button>
-          <button className="font-bold text-white hover:text-red-700 ">
+          <button className="text-white text-red-700 fh-8 font-md text-md hover:text-NACRed hover:border-b-2 hover:border-NACRed ">
             <a href="/">Hakkımızda</a>
           </button>
-          <button className="font-bold text-white hover:text-red-700 ">
+          <button className="text-white text-red-700 fh-8 font-md text-md hover:text-NACRed hover:border-b-2 hover:border-NACRed ">
             <a href="/">Çözümler</a>
           </button>
-          <button className="font-bold text-white hover:text-red-700 ">
+          <button className="text-white text-red-700 fh-8 font-md text-md hover:text-NACRed hover:border-b-2 hover:border-NACRed ">
             <a href="/">İş Ortakları</a>
           </button>
-          <button className="font-bold text-white hover:text-red-700 ">
+          <button className="h-8 text-white text-red-700 font-md text-md hover:text-NACRed hover:border-b-2 hover:border-NACRed ">
             <a href="/">Referanslar</a>
           </button>
-          <button className="p-4 m-4 font-bold text-white border border-white hover:text-red-700 rounded-3xl ">
+          <button className="p-4 m-4 font-bold text-white border border-white hover:border-NACRed hover:text-NACRed rounded-3xl ">
             <a href="/">Tanışalım 👋</a>
           </button>
           
 
         </div>
         </div>
+        
+
+    {/* //---------------Small devices--------------------------------------------------------------------//// */}
+
+    <div className='flex sm:hidden'>
+      <button className="h-8 text-white text-red-700 font-md text-md hover:text-NACRed hover:border-b-2 hover:border-NACRed">
+            <Link href="/">
+            <a href="/">Anasayfa</a>
+            </Link>
+          </button>
+          <button className="h-8 text-white text-red-700 font-md text-md hover:text-NACRed hover:border-b-2 hover:border-NACRed ">
+            <Link href="/">
+            <a href="/">Anasayfa</a>
+            </Link>
+          </button>
+          <button className="h-8 text-white text-red-700 font-md text-md hover:text-NACRed hover:border-b-2 hover:border-NACRed ">
+            <Link href="/">
+            <a href="/">Anasayfa</a>
+            </Link>
+          </button>
+          <button className="h-8 text-white text-red-700 font-md text-md hover:text-NACRed hover:border-b-2 hover:border-NACRed ">
+            <Link href="/">
+            <a href="/">Anasayfa</a>
+            </Link>
+          </button>
+    </div>
+
+</>
   )
 }
 
