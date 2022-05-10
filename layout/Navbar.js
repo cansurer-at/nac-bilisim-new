@@ -17,19 +17,19 @@ function Navbar() {
             <a href="/">Anasayfa</a>
             </Link>
           </button>
-          <button className="text-white text-red-700 fh-8 font-md text-md hover:text-NACRed hover:border-b-2 hover:border-NACRed ">
+          <button className="text-white text-red-700 font-md text-md hover:text-NACRed hover:border-b-2 hover:border-NACRed ">
             <a href="/">Hakkımızda</a>
           </button>
-          <button className="text-white text-red-700 fh-8 font-md text-md hover:text-NACRed hover:border-b-2 hover:border-NACRed ">
+          <button className="text-white text-red-700 font-md text-md hover:text-NACRed hover:border-b-2 hover:border-NACRed ">
             <a href="/">Çözümler</a>
           </button>
-          <button className="text-white text-red-700 fh-8 font-md text-md hover:text-NACRed hover:border-b-2 hover:border-NACRed ">
+          <button className="text-white text-red-700 font-md text-md hover:text-NACRed hover:border-b-2 hover:border-NACRed ">
             <a href="/">İş Ortakları</a>
           </button>
           <button className="h-8 text-white text-red-700 font-md text-md hover:text-NACRed hover:border-b-2 hover:border-NACRed ">
             <a href="/">Referanslar</a>
           </button>
-          <button className="p-4 m-4 font-bold text-white border border-white hover:border-NACRed hover:text-NACRed rounded-3xl ">
+          <button className="flex items-center h-8 px-4 py-2 font-bold text-white border border-white rounded-full hover:border-NACRed hover:text-NACRed ">
             <a href="/">Tanışalım 👋</a>
           </button>
           
