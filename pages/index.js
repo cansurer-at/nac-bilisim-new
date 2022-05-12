@@ -3,6 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import 'remixicon/fonts/remixicon.css'
+import AboutUs from "@/components/AboutUs";
 
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
     
         
         <Contact/>
+        <AboutUs/>
       
    
       
