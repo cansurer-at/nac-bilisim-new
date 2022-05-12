@@ -15,6 +15,13 @@ module.exports = {
       }
     },
     extend: {
+
+      backgroundImage: {
+        'homepageBackgroundRed': "url('/homepage-background-red.png')",
+      },
+
+
+
       colors: {
         secondaryText: '#CAD0DC',
         main: '#5C626E',
@@ -35,6 +42,8 @@ module.exports = {
           'tr-even': '#ffffff',
           'td-color': '#767676',
         },
+
+
 
         primary: {
           hover: '#0046CC',

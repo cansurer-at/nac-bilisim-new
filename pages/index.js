@@ -4,6 +4,7 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import 'remixicon/fonts/remixicon.css'
 import AboutUs from "@/components/AboutUs";
+import Solutions from "@/components/Solutions";
 
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
         
         <Contact/>
         <AboutUs/>
+        <Solutions/>
       
    
       
