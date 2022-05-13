@@ -3,7 +3,7 @@ import React from "react";
 export default function AboutUs() {
   return (
     <div className="container mx-auto bg-white">
-      <div className="grid grid-cols-1 py-20 md:py-20 md:mx-10 lg:ml-0 lg:py-16 lg:grid-cols-2 md:gap-15 ">
+      <div className="grid grid-cols-1 py-20 pb-0 md:py-20 md:mx-10 lg:ml-0 lg:py-16 lg:grid-cols-2 md:gap-15 ">
         <div className="grid grid-cols-2 gap-4 px-1 lg:px-0 lg:h-100% ">
           <img className="h-full" src="/card.png" alt="card-photo"></img>
           <div className="grid gap-4">
