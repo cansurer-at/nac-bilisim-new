@@ -6,7 +6,7 @@ export default function Footer() {
     <>
       <div className="w-full px-2 py-10 text-white bg-NACBlack ">
         <div className="container mx-auto mt-3 lg:mt-0">
-          <div className="grid grid-cols-12 lg:gap-10">
+          <div className="grid grid-cols-12 lg:gap-10 lg:mx-0 md:mx-[1rem]">
             <div className="col-span-12 mt-3 lg:col-span-3 lg:mt-0">
             <h3 class="text-white font-semibold text-mb mb-5">Hakkımızda</h3>
               <p className="text-xs">
@@ -140,7 +140,7 @@ export default function Footer() {
               <div class="flex items-center mt-3 space-x-5">
                 <a
                   title="Facebook"
-                  class=" flex items-center justify-center px-2 py-1 rounded-full bg-nacBlackSecondary hover:bg-NACRed transition-all duration-300 cursor-pointer"
+                  class=" flex items-center justify-center px-2 py-1 rounded-full bg-[#1E203A] hover:bg-NACRed transition-all duration-300 cursor-pointer"
                   href="#"
                   rel="noopener noreferrer"
                   target="_blank"
@@ -149,7 +149,7 @@ export default function Footer() {
                 </a>
                 <a
                   title="Twitter"
-                  class="flex items-center justify-center px-2 py-1 rounded-full bg-nacBlackSecondary hover:bg-NACRed transition-all duration-300 cursor-pointer"
+                  class="flex items-center justify-center px-2 py-1 rounded-full bg-[#1E203A] hover:bg-NACRed transition-all duration-300 cursor-pointer"
                   href="#"
                   rel="noopener noreferrer"
                   target="_blank"
@@ -159,7 +159,7 @@ export default function Footer() {
                 </a>
                 <a
                   title="İnstagram"
-                  class="flex items-center justify-center px-2 py-1 rounded-full bg-nacBlackSecondary hover:bg-NACRed transition-all duration-300 cursor-pointer"
+                  class="flex items-center justify-center px-2 py-1 rounded-full bg-[#1E203A] hover:bg-NACRed transition-all duration-300 cursor-pointer"
                   href="#"
                   rel="noopener noreferrer"
                   target="_blank"
@@ -169,7 +169,7 @@ export default function Footer() {
                 </a>
                 <a
                   title="Youtube"
-                  class="flex items-center justify-center px-2 py-1 rounded-full bg-nacBlackSecondary hover:bg-NACRed transition-all duration-300 cursor-pointer"
+                  class="flex items-center justify-center px-2 py-1 rounded-full bg-[#1E203A] hover:bg-NACRed transition-all duration-300 cursor-pointer"
                   href="#"
                   rel="noopener noreferrer"
                   target="_blank"
@@ -182,11 +182,11 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className=" text-xs flex text-white  w-100% bg-[#1E203A] justify-between items-center mx-auto w-full px-[21.5rem] py-2">
-        <h6>Copyright © Nac Bilişim {year} Tüm Hakları Saklıdır.</h6>
-        <h6>
+      <div className=" text-xs flex text-white  w-100% bg-[#1E203A] justify-between items-center mx-auto w-full flex-col lg:flex-row md:flex-col lg:px-[29rem] md:px-[1rem] py-2">
+        <h6 className="md:mb-4 lg:mb-0  text-[0.6rem] text-center px-[3rem] lg:px-0 mb:px-0 lg:text-mb  ">Copyright © Nac Bilişim {year} Tüm Hakları Saklıdır.</h6>
+        <h6 className="md:mb-1 lg:mb-0 pt-[1rem] pb-[0.5rem]   lg:py-0 md:py-0">
           Yazılım ve Tasarım{" "}
-          <span className="text-NACRed">
+          <span className="text-NACRed ">
             <a rel="noreferrer" target="_blank" href="http://www.webinu.com/">
               Webinu
             </a>
