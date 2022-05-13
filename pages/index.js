@@ -1,11 +1,10 @@
 import Contact from "@/components/Contact";
 import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
 import 'remixicon/fonts/remixicon.css'
 import AboutUs from "@/components/AboutUs";
 import Solutions from "@/components/Solutions";
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function Home() {
   return (

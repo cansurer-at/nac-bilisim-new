@@ -1,13 +1,77 @@
 import React from "react";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 
 export default function Solutions() {
+  function SampleNextArrow(props) {
+    const { onClick } = props;
+    return (
+      <div className="absolute cursor-pointer -right-16 bottom-10 md:-right-15 ">
+        <i onClick={onClick} class="ri-arrow-right-s-line text-5xl "></i>
+      </div>
+    );
+  }
+
+  function SamplePrevArrow(props) {
+    const { onClick } = props;
+    return (
+      <div className="absolute z-50 cursor-pointer lg:-left-24 bottom-10 -left-16">
+      <i onClick={onClick} className="text-5xl ri-arrow-left-s-line"></i>
+    </div>
+    );
+  }
+
+  const settings = {
+    dots: false,
+    autoplay: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 2,
+    initialSlide: 0,
+    autoplaySpeed: 1500,
+    nextArrow: <SampleNextArrow  />,
+    prevArrow: <SamplePrevArrow />,
+
+    responsive: [
+      {
+        dots: false,
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        dots: false,
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        dots: false,
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
   return (
     <div className=" bg-NACBlack">
       <div className="">
         <div className="grid lg:grid-cols-2 md:grid-cols-1 ">
           <div className="flex flex-col lg:pl-[23rem] lg:pr-[5rem] pr-10 pt-10 md:pt-0 pl-10 md:pr-0 md:pl-0   ">
             <div className="col-span-1 lg:py-20 md:pl-14 lg:pl-0 md:pt-12 md:pb-16 ">
-              <h6 className="pt-8 font-bold lg:pt-0 text-NACRed md:text-xl ">
+              <h6 className="pt-8 font-semibold lg:pt-0 text-NACRed md:text-xl ">
                 ÇÖZÜMLERİMİZ
               </h6>
               <h1 className="my-10 text-4xl font-bold text-white lg:text-5xl ">
@@ -73,7 +137,49 @@ export default function Solutions() {
           </div>
         </div>
 
-        <div>adfasdf</div>
+        <div className="py-20 bg-white">
+          <h6 className="font-semibold text-center lg:pt-0 text-NACRed md:text-xl lg:text-md">
+            BİRLİKTE ÇALIŞTIĞIMIZ
+          </h6>
+          <h1 className="my-5 text-4xl font-semibold text-center text-black lg:text-6xl ">
+            İş Ortakları
+          </h1>
+          <div className="mx-2 border-b-2 md:mx-10 lg:mx-0 md:border-b-4 md:border-none lg:border-none">
+          <div className="container pb-10 pl-20 pr-20 mx-auto ">
+            <Slider {...settings}>
+              
+              <div>
+                <img src="/marka-logo1.png"></img>
+              </div>
+              <div>
+                <img src="/marka-logo2.png"></img>
+              </div>
+              <div>
+                <img src="/marka-logo3.png"></img>
+              </div>
+              <div>
+                <img src="/marka-logo4.png"></img>
+              </div>
+              <div>
+                <img src="/marka-logo5.png"></img>
+              </div>
+              <div>
+                <img src="/marka-logo6.png"></img>
+              </div>
+              <div>
+                <img src="/marka-logo7.png"></img>
+              </div>
+              <div>
+                <img src="/marka-logo8.png"></img>
+              </div>
+              <div>
+                <img src="/marka-logo9.png"></img>
+              </div>
+            </Slider>
+            </div>
+           
+          </div>
+        </div>
       </div>
     </div>
   );
