@@ -3,6 +3,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
+
+// https://www.figma.com/file/S6P8cm15awWJZXjc3IUzHf/Yomio-Web-UI%2FUX-Design?node-id=159%3A969
+
 export default function Solutions() {
   function SampleNextArrow(props) {
     const { onClick } = props;
@@ -137,7 +140,7 @@ export default function Solutions() {
           </div>
         </div>
 
-        <div className="py-20 bg-white">
+        <div className="py-10 pt-20 bg-white ">
           <h6 className="font-semibold text-center lg:pt-0 text-NACRed md:text-xl lg:text-md">
             BİRLİKTE ÇALIŞTIĞIMIZ
           </h6>
